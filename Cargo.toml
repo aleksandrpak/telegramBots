@@ -1,0 +1,7 @@
+[package]
+name = "telegram_bots"
+version = "0.1.0"
+authors = ["Aleksandr Pak <alekspak@icloud.com>"]
+
+[dependencies]
+telegram-bot = "*"
