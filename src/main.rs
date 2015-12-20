@@ -11,7 +11,7 @@ fn main() {
             match m.msg {
                 MessageType::Text(t) => {
                     let mut values = t.splitn(2, " ");
-                    if let Some(c) = values.next()  {
+                    if let Some(c) = values.next() {
                         match c {
                             "/huy" => { try!(api.send_message(m.chat.id(), format!("{} думает, {} хуй", m.from.first_name, values.next().unwrap_or("Костя")), None, None, None)); },
                             _ => {}
